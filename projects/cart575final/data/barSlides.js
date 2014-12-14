@@ -1,7 +1,7 @@
 
 var	slides = [
 				{
-					"id": "welcome",
+					"id": "home",
 					"title": "Welcome to Devil's Lake!",
 					"body": "Devil’s Lake State Park is located just south of Baraboo, Wisconsin and lies within Sauk County. As a popular destination for hiking, fishing, climbing, and camping, this park sees over two million visitors per year! Click through the slides to see the various characteristics of Devil's Lake that make it as popular as it is today."
 				},
@@ -34,5 +34,10 @@ var	slides = [
 					"id": "fishing",
 					"title": "Fishing",
 					"body": "Devil’s Lake is approximately 374 acres large with a mean depth of 30 feet and a max depth of 47 feet. Fishing is quite common as the DNR stocks Brown Trout and Walleye. Easy access fishing is possible from the Lake’s sidewalk trails as well as from a boat using the two boat launches. One important note is that no power boats are allow, so this is a great lake for small boats, canoes, or kayaks. Devil’s Lake is mesotrophic and has moderately clear water, some underwater rock structure, and a range of weed species. Fish often seen in the lake include: Panfish (abundant), Largemouth Bass (Common), Northern Pike (Common), Smallmouth Bass (Common), Trout (Present), and Walleye (Present. A full species list is available at http://www.devilslakewisconsin.com/fishing-devils-lake/. "
+				},
+				{
+					"id": "explore",
+					"title": "Explore",
+					"body": "Explore all the features of Devil's Lake! Open the legend to select which layers you'd like to see."
 				}
 			];
