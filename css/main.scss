@@ -105,7 +105,7 @@ html, body
 
 body
 {
-    background-color: #7CB342;
+    background-color: #558B2F;
 
     #upperHalf
     {
@@ -126,6 +126,55 @@ body
             color: #DCEDC8;
             font-size: 4vw;
             font-weight: bold;
+        }
+    }
+
+    #dl-map
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        
+        a
+        {
+            text-decoration: none
+        }
+
+        figure
+        {
+            display: inline;
+
+            img
+            {
+                 width: 20vw;
+                 border: 10px solid #DCEDC8;
+            }
+
+            figcaption
+            {
+                display: block;
+                font-family: "Amatic SC";
+                font-size: 2vw;
+                color: #DCEDC8;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #dl-map figure:hover
+    {
+        cursor: pointer;
+
+        img
+        {
+            border: 10px solid #33691E;
+        }
+        figcaption
+        {
+            color: #33691E;
         }
     }
 }
