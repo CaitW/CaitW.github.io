@@ -7,8 +7,8 @@ $(document).ready(function () {
 		$(".page[name=" + pageToOpen + "]").addClass("open");
 
 		$("#contents").css({
-			"top": "10%",
-			"bottom": "10%"
+			"top": "5%",
+			"bottom": "5%"
 		});
 
 	});
