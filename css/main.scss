@@ -97,37 +97,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html
+{
+    font-size: 1vw;
+}
 
 html, body
 {
     height: 100%;
 }
 
+@media (max-width: 1200px)
+{
+    html 
+    {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px)
+{
+    html
+    {
+        font-size: 2vw;
+    }
+}
+
 body
 {
-    background-color: #558B2F;
+    background-color: #2196F3;
 
-    #upperHalf
+    #contents
     {
-        background-color: #9CCC65;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 30%;
+        bottom: 50%;
         left: 0;
-        height: 45%;
+        right: 0;
+        text-align: center;
+        font-family: "Amatic SC";
+        color: #DCEDC8;
+        font-size: 4rem;
+        font-weight: bold;
 
-        #name
+        .fa-map-marker
         {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            font-family: "Amatic SC";
-            color: #DCEDC8;
-            font-size: 4vw;
-            font-weight: bold;
+            display: block;
+            font-size: 3rem;
+        }
+
+        #links
+        {
+            font-size: 1.8rem;
+            color: #90CAF9;
+
+            .fa
+            {
+                margin-right: 1vw;
+            }
+            .fa:hover
+            {
+                cursor: pointer;
+                color: #fff;
+            }
         }
     }
+    
 
     #dl-map
     {
@@ -177,6 +212,12 @@ body
             color: #33691E;
         }
     }
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
 }
 
 
