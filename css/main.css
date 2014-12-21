@@ -203,7 +203,8 @@ body {
         font-size: 1.2rem;
         font-weight: bold; }
         body #contents .page[name="resume"] h3 .jobDates {
-          font-weight: normal; }
+          font-weight: normal;
+          margin-left: 0.5vw; }
       body #contents .page[name="resume"] p {
         margin: 0 0 0 2vw;
         font-size: 1rem; }
