@@ -99,53 +99,68 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    font-family: "Amatic SC";
-    color: #DCEDC8;
-    font-size: 4rem;
-    font-weight: bold; }
-    body #contents .fa-map-marker {
-      display: block;
-      font-size: 3rem; }
-    body #contents #externalLinks {
-      font-size: 1.8rem;
-      color: #90CAF9; }
-      body #contents #externalLinks .fa {
-        margin-right: 1vw; }
-      body #contents #externalLinks .fa:hover {
-        cursor: pointer;
-        color: #fff; }
-    body #contents #internalLinks {
-      font-size: 1.2rem;
-      font-family: "PT Sans"; }
-      body #contents #internalLinks .internalLink:hover {
-        cursor: pointer;
-        color: #fff; }
-  body #dl-map {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: block;
-    text-align: center;
-    margin-top: 10%; }
-    body #dl-map a {
-      text-decoration: none; }
-    body #dl-map figure {
-      display: inline; }
-      body #dl-map figure img {
-        width: 20vw;
-        border: 10px solid #DCEDC8; }
-      body #dl-map figure figcaption {
+    color: #E3F2FD; }
+    body #contents .title {
+      font-family: "Amatic SC";
+      font-size: 4rem;
+      font-weight: bold; }
+      body #contents .title .fa {
+        font-size: 3rem;
+        vertical-align: middle;
+        margin-left: -4vw;
+        margin-right: 1vw;
+        color: #90CAF9; }
+        body #contents .title .fa:hover {
+          cursor: pointer;
+          color: #E3F2FD; }
+    body #contents .page {
+      display: none; }
+      body #contents .page.open {
+        display: block; }
+      body #contents .page[name="home"] .fa-map-marker {
         display: block;
-        font-family: "Amatic SC";
-        font-size: 2vw;
-        color: #DCEDC8;
-        font-weight: bold; }
-  body #dl-map figure:hover {
-    cursor: pointer; }
-    body #dl-map figure:hover img {
-      border: 10px solid #33691E; }
-    body #dl-map figure:hover figcaption {
-      color: #33691E; }
+        font-size: 3rem; }
+      body #contents .page[name="home"] #externalLinks {
+        font-size: 1.8rem;
+        color: #90CAF9; }
+        body #contents .page[name="home"] #externalLinks .fa {
+          margin-right: 1vw; }
+        body #contents .page[name="home"] #externalLinks a.fa:last-child {
+          margin-right: 0; }
+        body #contents .page[name="home"] #externalLinks .fa:hover {
+          cursor: pointer;
+          color: #fff; }
+      body #contents .page[name="home"] #internalLinks {
+        font-size: 1.2rem;
+        font-family: "Open Sans";
+        padding-bottom: 3vh;
+        font-weight: normal;
+        color: #90CAF9; }
+        body #contents .page[name="home"] #internalLinks .fa {
+          font-size: 0.3rem;
+          vertical-align: middle;
+          margin: 0 1vw; }
+        body #contents .page[name="home"] #internalLinks .internalLink:hover {
+          cursor: pointer;
+          color: #fff; }
+      body #contents .page[name="projects"] .project figure {
+        display: inline-block; }
+        body #contents .page[name="projects"] .project figure img {
+          width: 20vw;
+          border: 10px solid #90CAF9; }
+          @media (max-width: 1200px) {
+            body #contents .page[name="projects"] .project figure img {
+              width: 25vw; } }
+          @media (max-width: 768px) {
+            body #contents .page[name="projects"] .project figure img {
+              width: 35vw; } }
+        body #contents .page[name="projects"] .project figure figcaption {
+          margin-top: 0.5vh;
+          font-size: 1.2rem;
+          font-family: "Open Sans";
+          color: #E3F2FD; }
+      body #contents .page[name="projects"] .project figure:hover img {
+        border-color: #E3F2FD; }
 
 a {
   text-decoration: none;

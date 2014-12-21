@@ -135,100 +135,140 @@ body
         left: 0;
         right: 0;
         text-align: center;
-        font-family: "Amatic SC";
-        color: #DCEDC8;
-        font-size: 4rem;
-        font-weight: bold;
+        color: #E3F2FD;
 
-        .fa-map-marker
+        .title
         {
-            display: block;
-            font-size: 3rem;
-        }
-
-        #externalLinks
-        {
-            font-size: 1.8rem;
-            color: #90CAF9;
-
+            font-family: "Amatic SC";
+            font-size: 4rem;
+            font-weight: bold;
             .fa
             {
+                font-size: 3rem;
+                vertical-align: middle;
+                margin-left: -4vw;
                 margin-right: 1vw;
-            }
-            .fa:hover
-            {
-                cursor: pointer;
-                color: #fff;
+                color: #90CAF9;
+
+                &:hover
+                {
+                    cursor: pointer;
+                    color: #E3F2FD;
+                }
             }
         }
 
-        #internalLinks
+        .page
         {
-            font-size: 1.2rem;
-            font-family: "PT Sans";
+            display: none;
 
-            .internalLink
-            {
-               // display: block;
-            }
-            .internalLink:hover
-            {
-                cursor: pointer;
-                color: #fff; 
-            }
-
-        }
-    }
-    
-
-    #dl-map
-    {
-        position: absolute;
-        left: 0;
-        right: 0;
-        display: block;
-        text-align: center;
-        margin-top: 10%;
-        
-        a
-        {
-            text-decoration: none
-        }
-
-        figure
-        {
-            display: inline;
-
-            img
-            {
-                 width: 20vw;
-                 border: 10px solid #DCEDC8;
-            }
-
-            figcaption
+            &.open
             {
                 display: block;
-                font-family: "Amatic SC";
-                font-size: 2vw;
-                color: #DCEDC8;
-                font-weight: bold;
             }
-        }
-    }
 
-    #dl-map figure:hover
-    {
-        cursor: pointer;
+            &[name="home"]
+            {
+                .fa-map-marker
+                {
+                    display: block;
+                    font-size: 3rem;
+                }
 
-        img
-        {
-            border: 10px solid #33691E;
+                #externalLinks
+                {
+                    font-size: 1.8rem;
+                    color: #90CAF9;
+
+                    .fa
+                    {
+                        margin-right: 1vw;
+                    }
+                    a.fa:last-child
+                    {
+                        margin-right: 0;
+                    }
+                    .fa:hover
+                    {
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                }
+
+                #internalLinks
+                {
+                    font-size: 1.2rem;
+                    font-family: "Open Sans";
+                    padding-bottom: 3vh;
+                    font-weight: normal;
+                    color: #90CAF9;
+
+                    .fa
+                    {
+                        font-size: 0.3rem;
+                        vertical-align: middle;
+                        margin: 0 1vw;
+                    }
+
+                    .internalLink:hover
+                    {
+                        cursor: pointer;
+                        color: #fff; 
+                    }
+                }
+            }
+
+            &[name="projects"]
+            {
+                .project
+                {
+                    figure
+                    {
+                        display: inline-block;
+
+                        img
+                        {
+                            width: 20vw;
+
+                            @media (max-width: 1200px)
+                            {
+                                width: 25vw;
+                            }
+                            @media (max-width: 768px)
+                            {
+                                width: 35vw;
+                            }
+                            
+                            border: 10px solid #90CAF9;
+                        }
+                        figcaption
+                        {
+                            margin-top: 0.5vh;
+                            font-size: 1.2rem;
+                            font-family: "Open Sans";
+                            color: #E3F2FD;
+                        }
+                    }
+                    figure:hover
+                    {
+                        img
+                        {
+                            border-color: #E3F2FD;
+                        }
+                    }
+
+                }
+            }
+
+            &[name="resume"]
+            {
+
+            }
+
         }
-        figcaption
-        {
-            color: #33691E;
-        }
+
     }
+    
 }
 
 a
