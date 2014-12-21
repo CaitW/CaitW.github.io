@@ -115,6 +115,18 @@ img
     width: 20vw;
 }
 
+.textArea {
+    margin: 0 30%;
+    font-family: $bodyFont;
+}
+
+ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 @media (max-width: 1200px)
 {
     html 
@@ -124,6 +136,10 @@ img
     img
     {
         width: 25vw;
+    }
+    .textArea 
+    {
+        margin: 0 20%;
     }
 }
 
@@ -136,6 +152,10 @@ img
     img
     {
         width: 35vw;
+    }
+    .textArea 
+    {
+        margin: 0 10%;
     }
 }
 
@@ -180,6 +200,11 @@ body
             font-family: $titleFont;
             font-size: 2.5rem;
 
+        }
+
+        .textArea 
+        {
+            text-align: left;
         }
 
         .page
@@ -272,7 +297,48 @@ body
 
             &[name="resume"]
             {
+                ul
+                {
+                    font-family: $bodyFont;
+                    font-size: 1.2rem;
+                    //font-weight: bold;
+                    li
+                    {
+                        margin: 10px 0;
+                    }
+                    ul
+                    {
+                        display: inline;
+                        margin: 3vh 1vw;
+                        font-weight: bold;
+                        font-size: 1rem;
 
+                        li {
+                            color: #0D47A1;
+                            display: inline;
+                            padding: 0.2vh 0.4vw;
+                            background-color: #90CAF9;
+                            border-radius: 2px;
+                            margin-right: 0.2vw;
+                        }
+                    }
+                }
+
+                h3
+                {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    .jobDates
+                    {
+                        font-weight: normal;
+                    }
+                }
+
+                p
+                {
+                    margin: 0 0 0 2vw;
+                    font-size: 1rem;
+                }
             }
 
         }

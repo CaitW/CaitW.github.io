@@ -87,18 +87,33 @@ html, body {
 img {
   width: 20vw; }
 
+.textArea {
+  margin: 0 30%;
+  font-family: "Open Sans Condensed"; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 @media (max-width: 1200px) {
   html {
     font-size: 2vw; }
 
   img {
-    width: 25vw; } }
+    width: 25vw; }
+
+  .textArea {
+    margin: 0 20%; } }
 @media (max-width: 768px) {
   html {
     font-size: 3vw; }
 
   img {
-    width: 35vw; } }
+    width: 35vw; }
+
+  .textArea {
+    margin: 0 10%; } }
 body {
   background-color: #2196F3;
   font-family: "Open Sans Condensed"; }
@@ -126,6 +141,8 @@ body {
     body #contents .subtitle {
       font-family: "Amatic SC";
       font-size: 2.5rem; }
+    body #contents .textArea {
+      text-align: left; }
     body #contents .page {
       display: none; }
       body #contents .page.open {
@@ -165,6 +182,31 @@ body {
           color: #E3F2FD; }
       body #contents .page[name="projects"] .project figure:hover img {
         border-color: #E3F2FD; }
+      body #contents .page[name="resume"] ul {
+        font-family: "Open Sans Condensed";
+        font-size: 1.2rem; }
+        body #contents .page[name="resume"] ul li {
+          margin: 10px 0; }
+        body #contents .page[name="resume"] ul ul {
+          display: inline;
+          margin: 3vh 1vw;
+          font-weight: bold;
+          font-size: 1rem; }
+          body #contents .page[name="resume"] ul ul li {
+            color: #0D47A1;
+            display: inline;
+            padding: 0.2vh 0.4vw;
+            background-color: #90CAF9;
+            border-radius: 2px;
+            margin-right: 0.2vw; }
+      body #contents .page[name="resume"] h3 {
+        font-size: 1.2rem;
+        font-weight: bold; }
+        body #contents .page[name="resume"] h3 .jobDates {
+          font-weight: normal; }
+      body #contents .page[name="resume"] p {
+        margin: 0 0 0 2vw;
+        font-size: 1rem; }
 
 a {
   text-decoration: none;
