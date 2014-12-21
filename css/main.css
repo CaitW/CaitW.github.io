@@ -84,14 +84,24 @@ html {
 html, body {
   height: 100%; }
 
+img {
+  width: 20vw; }
+
 @media (max-width: 1200px) {
   html {
-    font-size: 2vw; } }
+    font-size: 2vw; }
+
+  img {
+    width: 25vw; } }
 @media (max-width: 768px) {
   html {
-    font-size: 3vw; } }
+    font-size: 3vw; }
+
+  img {
+    width: 35vw; } }
 body {
-  background-color: #2196F3; }
+  background-color: #2196F3;
+  font-family: "Open Sans Condensed"; }
   body #contents {
     position: absolute;
     top: 30%;
@@ -131,33 +141,24 @@ body {
           cursor: pointer;
           color: #fff; }
       body #contents .page[name="home"] #internalLinks {
-        font-size: 1.2rem;
-        font-family: "Open Sans";
+        font-size: 1.4rem;
         padding-bottom: 3vh;
         font-weight: normal;
         color: #90CAF9; }
         body #contents .page[name="home"] #internalLinks .fa {
           font-size: 0.3rem;
           vertical-align: middle;
-          margin: 0 1vw; }
+          margin: 0 0.5vw; }
         body #contents .page[name="home"] #internalLinks .internalLink:hover {
           cursor: pointer;
           color: #fff; }
       body #contents .page[name="projects"] .project figure {
         display: inline-block; }
         body #contents .page[name="projects"] .project figure img {
-          width: 20vw;
           border: 10px solid #90CAF9; }
-          @media (max-width: 1200px) {
-            body #contents .page[name="projects"] .project figure img {
-              width: 25vw; } }
-          @media (max-width: 768px) {
-            body #contents .page[name="projects"] .project figure img {
-              width: 35vw; } }
         body #contents .page[name="projects"] .project figure figcaption {
           margin-top: 0.5vh;
-          font-size: 1.2rem;
-          font-family: "Open Sans";
+          font-size: 1.4rem;
           color: #E3F2FD; }
       body #contents .page[name="projects"] .project figure:hover img {
         border-color: #E3F2FD; }

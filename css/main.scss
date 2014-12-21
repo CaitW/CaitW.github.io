@@ -97,6 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+$titleFont: "Amatic SC";
+$bodyFont: "Open Sans Condensed";
+
 html
 {
     font-size: 1vw;
@@ -107,11 +110,20 @@ html, body
     height: 100%;
 }
 
+img
+{
+    width: 20vw;
+}
+
 @media (max-width: 1200px)
 {
     html 
     {
         font-size: 2vw;
+    }
+    img
+    {
+        width: 25vw;
     }
 }
 
@@ -121,11 +133,16 @@ html, body
     {
         font-size: 3vw;
     }
+    img
+    {
+        width: 35vw;
+    }
 }
 
 body
 {
     background-color: #2196F3;
+    font-family: $bodyFont;
 
     #contents
     {
@@ -139,7 +156,7 @@ body
 
         .title
         {
-            font-family: "Amatic SC";
+            font-family: $titleFont;
             font-size: 4rem;
             font-weight: bold;
             .fa
@@ -197,8 +214,7 @@ body
 
                 #internalLinks
                 {
-                    font-size: 1.2rem;
-                    font-family: "Open Sans";
+                    font-size: 1.4rem;
                     padding-bottom: 3vh;
                     font-weight: normal;
                     color: #90CAF9;
@@ -207,7 +223,7 @@ body
                     {
                         font-size: 0.3rem;
                         vertical-align: middle;
-                        margin: 0 1vw;
+                        margin: 0 0.5vw;
                     }
 
                     .internalLink:hover
@@ -228,24 +244,12 @@ body
 
                         img
                         {
-                            width: 20vw;
-
-                            @media (max-width: 1200px)
-                            {
-                                width: 25vw;
-                            }
-                            @media (max-width: 768px)
-                            {
-                                width: 35vw;
-                            }
-                            
                             border: 10px solid #90CAF9;
                         }
                         figcaption
                         {
                             margin-top: 0.5vh;
-                            font-size: 1.2rem;
-                            font-family: "Open Sans";
+                            font-size: 1.4rem;
                             color: #E3F2FD;
                         }
                     }
@@ -256,7 +260,6 @@ body
                             border-color: #E3F2FD;
                         }
                     }
-
                 }
             }
 
@@ -266,9 +269,7 @@ body
             }
 
         }
-
     }
-    
 }
 
 a
