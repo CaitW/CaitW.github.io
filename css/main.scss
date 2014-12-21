@@ -111,7 +111,7 @@ html, body
 {
     html 
     {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 }
 
@@ -119,7 +119,7 @@ html, body
 {
     html
     {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
 
@@ -146,7 +146,7 @@ body
             font-size: 3rem;
         }
 
-        #links
+        #externalLinks
         {
             font-size: 1.8rem;
             color: #90CAF9;
@@ -160,6 +160,23 @@ body
                 cursor: pointer;
                 color: #fff;
             }
+        }
+
+        #internalLinks
+        {
+            font-size: 1.2rem;
+            font-family: "PT Sans";
+
+            .internalLink
+            {
+               // display: block;
+            }
+            .internalLink:hover
+            {
+                cursor: pointer;
+                color: #fff; 
+            }
+
         }
     }
     

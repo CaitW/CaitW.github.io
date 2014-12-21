@@ -86,10 +86,10 @@ html, body {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 1.5vw; } }
+    font-size: 2vw; } }
 @media (max-width: 768px) {
   html {
-    font-size: 2vw; } }
+    font-size: 3vw; } }
 body {
   background-color: #2196F3; }
   body #contents {
@@ -106,12 +106,18 @@ body {
     body #contents .fa-map-marker {
       display: block;
       font-size: 3rem; }
-    body #contents #links {
+    body #contents #externalLinks {
       font-size: 1.8rem;
       color: #90CAF9; }
-      body #contents #links .fa {
+      body #contents #externalLinks .fa {
         margin-right: 1vw; }
-      body #contents #links .fa:hover {
+      body #contents #externalLinks .fa:hover {
+        cursor: pointer;
+        color: #fff; }
+    body #contents #internalLinks {
+      font-size: 1.2rem;
+      font-family: "PT Sans"; }
+      body #contents #internalLinks .internalLink:hover {
         cursor: pointer;
         color: #fff; }
   body #dl-map {
