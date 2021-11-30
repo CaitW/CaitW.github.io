@@ -1,275 +1,205 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222; }
 
 html {
+  color: #222;
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
 /*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
+iframe,
 img,
+svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
-textarea {
-  resize: vertical; }
 
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+textarea {
+  resize: vertical;
+}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html {
-  font-size: 1vw; }
 
-html, body {
-  height: 100%; }
+   html {font-size: 100%;}
 
-img {
-  width: 20vw; }
-
-.textArea {
-  margin: 0 30%;
-  font-family: "Open Sans Condensed"; }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 2vw; }
-
-  img {
-    width: 25vw; }
-
-  .textArea {
-    margin: 0 20%; } }
-@media (max-width: 768px) {
-  html {
-    font-size: 3vw; }
-
-  img {
-    width: 35vw; }
-
-  .textArea {
-    margin: 0 10%; } }
 body {
-  background-color: #2196F3;
-  font-family: "Open Sans Condensed"; }
-  body #contents {
-    position: absolute;
-    top: 30%;
-    bottom: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #E3F2FD; }
-    body #contents .title {
-      font-family: "Amatic SC";
-      font-size: 4rem;
-      font-weight: bold; }
-      body #contents .title .fa {
-        font-size: 3rem;
-        vertical-align: middle;
-        margin-left: -4vw;
-        margin-right: 1vw;
-        color: #90CAF9; }
-        body #contents .title .fa:hover {
-          cursor: pointer;
-          color: #E3F2FD; }
-    body #contents .subtitle {
-      font-family: "Amatic SC";
-      font-size: 2.5rem; }
-    body #contents .textArea {
-      text-align: left; }
-    body #contents .page {
-      display: none; }
-      body #contents .page.open {
-        display: block; }
-      body #contents .page[name="home"] .fa-map-marker {
-        display: block;
-        font-size: 3rem; }
-      body #contents .page[name="home"] #externalLinks {
-        font-size: 1.8rem;
-        color: #90CAF9; }
-        body #contents .page[name="home"] #externalLinks .fa {
-          margin-right: 1vw; }
-        body #contents .page[name="home"] #externalLinks a.fa:last-child {
-          margin-right: 0; }
-        body #contents .page[name="home"] #externalLinks .fa:hover {
-          cursor: pointer;
-          color: #fff; }
-      body #contents .page[name="home"] #internalLinks {
-        font-size: 1.4rem;
-        padding-bottom: 3vh;
-        font-weight: normal;
-        color: #90CAF9; }
-        body #contents .page[name="home"] #internalLinks .fa {
-          font-size: 0.3rem;
-          vertical-align: middle;
-          margin: 0 0.5vw; }
-        body #contents .page[name="home"] #internalLinks .internalLink:hover {
-          cursor: pointer;
-          color: #fff; }
-      body #contents .page[name="projects"] .project figure {
-        display: inline-block; }
-        body #contents .page[name="projects"] .project figure img {
-          border: 10px solid #90CAF9; }
-        body #contents .page[name="projects"] .project figure figcaption {
-          margin-top: 0.5vh;
-          font-size: 1.4rem;
-          color: #E3F2FD; }
-      body #contents .page[name="projects"] .project figure:hover img {
-        border-color: #E3F2FD; }
-      body #contents .page[name="resume"] ul {
-        font-family: "Open Sans Condensed";
-        font-size: 1.2rem; }
-        body #contents .page[name="resume"] ul li {
-          margin: 10px 0; }
-        body #contents .page[name="resume"] ul ul {
-          display: inline;
-          margin: 3vh 1vw;
-          font-weight: bold;
-          font-size: 1rem; }
-          body #contents .page[name="resume"] ul ul li {
-            color: #0D47A1;
-            display: inline;
-            padding: 0.2vh 0.4vw;
-            background-color: #90CAF9;
-            border-radius: 2px;
-            margin-right: 0.2vw; }
-      body #contents .page[name="resume"] h3 {
-        font-size: 1.2rem;
-        font-weight: bold; }
-        body #contents .page[name="resume"] h3 .jobDates {
-          font-weight: normal;
-          margin-left: 0.5vw; }
-      body #contents .page[name="resume"] p {
-        margin: 0 0 0 2vw;
-        font-size: 1rem; }
+  font-family: 'Outfit', serif;
+  padding: 5%;
+  width: 60%;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #444444;
+}
 
-a {
-  text-decoration: none;
-  color: inherit; }
+
+h1, h2, h3, h4, h5 {
+  /* margin: 3rem 0 1.38rem; */
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3, section>ul>li {font-size: 1.953rem;}
+
+h4, section>ul>li>ul>li {font-size: 1.563rem;}
+
+h5, section>ul>li>ul>li>ul>li, p {font-size: 1.25rem;}
+
+section>ul, section>ul>li>ul {
+  list-style-type: none;
+}
+
+section>ul>li {
+  padding-top: 16px;
+}
+
+h1, h2, ul {
+  font-family: 'Futura', san-serif;
+  text-transform: uppercase;
+}
+
+h3, h4, h5, p, ul>li>ul>li {
+  font-family: 'Outfit', serif;
+  text-transform: none;
+}
+
+section {
+  margin: 5% 0;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/*
- * Image replacement
- */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px; }
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
 
 /*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide visually and from screen readers
  */
-.hidden {
+
+.hidden,
+[hidden] {
   display: none !important;
-  visibility: hidden; }
+}
 
 /*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-.visuallyhidden {
+
+.sr-only {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
 
 /*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  white-space: inherit;
+  width: auto;
+}
 
 /*
- * Hide visually and from screenreaders, but maintain layout
+ * Hide visually and from screen readers, but maintain layout
  */
+
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -282,86 +212,106 @@ a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before,
-.clearfix:after {
+
+.clearfix::before,
+.clearfix::after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */ }
+}
 
-.clearfix:after {
-  clear: both; }
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1; }
+.clearfix::after {
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
 /* ==========================================================================
    Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media print {
-  * {
-    background: transparent !important;
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
     color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
+    /* Black prints faster */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
-  a[href]:after {
-    content: " (" attr(href) ")"; }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
 
   /*
-   * Don't show links for images, or javascript/internal links
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
    */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
   thead {
     display: table-header-group;
-    /* h5bp.com/t */ }
+  }
 
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}
+
