@@ -136,7 +136,8 @@ li {
   color: #616161;
 }
 
-h5 {
+h5,
+cite {
   color: #7a7a7a;
 }
 
@@ -170,6 +171,12 @@ section section {
 
 blockquote {
   font-style: italic;
+  margin: 5% 0 2.5% 0;
+}
+
+cite {
+  padding: 0 0 0 5%;
+  font-style: normal;
 }
 
 .title-date h4 {
