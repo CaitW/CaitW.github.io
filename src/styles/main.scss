@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+$background: rgba(37, 37, 37, 0.9);
+$font-color: rgba(244, 244, 244);
+
+$line-height: 1.8;
+$h1: 2em;
+$h2: 1.5874em;
+$h3: 1.2599em;
+$p: 1em;
+$small: 0.7937em;
+
+:root {
+  --color-pop-1: #ffc312;
+  --color-pop-2: #c4e538;
+  --color-pop-3: #12cbc4;
+  --color-pop-4: #fda7df;
+  --color-pop-5: #ed4c67;
+  --color-pop-6: #f79f1f;
+  --color-pop-6: #f79f1f;
+  --color-pop-7: #a3cb38;
+  --color-pop-8: #1289a7;
+  --color-pop-9: #d980fa;
+  --color-pop-10: #b53471;
+}
+
+html {
+  background-color: $background;
+}
+
+body {
+  color: $font-color;
+  font-family: 'Azeret Mono', monospace;
+  padding: 16px;
+}
+
+#root {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: $line-height;
+}
+
+h1 {
+  font-size: $h1;
+  font-weight: 600;
+}
+h2 {
+  font-size: $h2;
+  font-weight: 400;
+}
+h3 {
+  font-size: $h3;
+  font-weight: 400;
+}
+p {
+  font-size: $p;
+  font-weight: 400;
+  color: rgba(244, 244, 244, 0.8);
+}
+p + p {
+  padding-top: 8px;
+}
+small {
+  font-size: $small;
+  font-weight: 200;
+}
+
+section > section {
+  padding: 0 0 0 16px;
+  margin: 8px 0 8px 0;
+  border: 0px solid;
+  border-left-width: 4px;
+}
+
+a {
+  color: $font-color;
+  font-size: $h2;
+}
