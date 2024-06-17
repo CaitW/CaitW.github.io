@@ -1,5 +1,25 @@
 import { Resume } from '@types'
 
+const getDiff = (startDate: Date) => {
+  const diff = new Date().getTime() - startDate.getTime()
+
+  const seconds = Math.floor(diff / 1000)
+  const minutes = Math.floor(seconds / 60)
+  const hours = Math.floor(minutes / 60)
+  const days = Math.floor(hours / 24)
+  const months = Math.floor(days / 30)
+  const years = Math.floor(days / 365)
+
+  if (years > 0) {
+    const remainingMonths = months - years * 12
+    return `${years} years ${remainingMonths} months`
+  } else {
+    return `${months} months`
+  }
+}
+const geospanLength = getDiff(new Date('2024-02-01'))
+const contractingLength = getDiff(new Date('2014-11-01'))
+
 export const RESUME: Resume = {
   contact: [
     { label: 'Email', link: 'mailto:wolters.caitlin@gmail.com' },
@@ -13,7 +33,7 @@ export const RESUME: Resume = {
           title: 'Frontend',
         },
         {
-          body: ['HTML5, CSS / SCSS, Figma'],
+          body: ['HTML5, CSS, Figma'],
           title: 'Design',
         },
         {
@@ -25,7 +45,7 @@ export const RESUME: Resume = {
           title: 'Data Visualization + Maps',
         },
         {
-          body: ['Node, various SQL flavors, Postgres'],
+          body: ['Node, Postgres'],
           title: 'Backend',
         },
       ],
@@ -33,6 +53,11 @@ export const RESUME: Resume = {
     },
     {
       children: [
+        {
+          body: [`February 2024 - Present, ${geospanLength}`],
+          subtitles: ['Senior Software Engineer'],
+          title: 'GeoSpan',
+        },
         {
           body: [
             'January 2021 - July 2023, 2.5 years',
@@ -59,7 +84,7 @@ export const RESUME: Resume = {
         },
         {
           body: [
-            'November 2014 - present, 9 years',
+            `November 2014 - present, ${contractingLength}`,
             'I occasionally take contract and freelance roles doing web development. I work primarily with nonprofit organizations to develop frontend applications, specializing in web mapping and data visualization tools.',
           ],
           title: 'Contracting',
@@ -87,6 +112,31 @@ export const RESUME: Resume = {
         },
       ],
       title: 'Education',
+    },
+    {
+      children: [
+        {
+          body: ['Built a custom camper van from scratch'],
+          subtitles: ['2020 - 2023, 3 years'],
+          title: 'Van Build',
+        },
+        {
+          body: [
+            'High-altitude mountaineering leadership course in the Indian Himalaya',
+          ],
+          subtitles: ['Himalaya Mountaineering, 2011'],
+          title: 'National Outdoor Leadership School',
+        },
+        {
+          title: 'Private Pilot License',
+          subtitles: ['2009 - 2010'],
+        },
+        {
+          body: ['7th place female finisher'],
+          title: '50k Ultramarathon',
+        },
+      ],
+      title: 'Extracurriculars',
     },
   ],
   subtitle: 'Senior Frontend Software Engineer',
