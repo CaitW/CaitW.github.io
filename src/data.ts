@@ -128,8 +128,8 @@ export const RESUME: Resume = {
           title: 'National Outdoor Leadership School',
         },
         {
-          title: 'Private Pilot License',
           subtitles: ['2009 - 2010'],
+          title: 'Private Pilot License',
         },
         {
           body: ['7th place female finisher'],
