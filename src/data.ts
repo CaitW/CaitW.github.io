@@ -45,7 +45,7 @@ export const RESUME: Resume = {
           title: 'Data Visualization + Maps',
         },
         {
-          body: ['Node, Postgres', 'Express'],
+          body: ['Node, Postgres, Express'],
           title: 'Backend',
         },
       ],
