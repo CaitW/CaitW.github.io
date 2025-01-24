@@ -37,16 +37,20 @@ export const RESUME: Resume = {
           title: 'Design',
         },
         {
-          body: ['git + GitHub, Agile, Jira, Jest, Cypress'],
-          title: 'Workflow + Testing',
+          body: ['git + GitHub, Agile, Jira, Jest, Cypress, Yup, Zod'],
+          title: 'Workflow + Testing + Validation',
         },
         {
-          body: ['AG Grid, d3, OpenLayers, Leaflet, Google Maps, Mapbox'],
+          body: ['Tanstack Table, AG Grid, d3, OpenLayers, Leaflet, Google Maps, Mapbox'],
           title: 'Data Visualization + Maps',
         },
         {
           body: ['Node, Postgres, Express'],
           title: 'Backend',
+        },
+        {
+          body: ['Gitlab Pipelines, Auth0, Docker'],
+          title: 'Devops',
         },
       ],
       title: 'Skills',
@@ -139,8 +143,8 @@ export const RESUME: Resume = {
       title: 'Extracurriculars',
     },
   ],
-  subtitle: 'Senior Frontend Software Engineer',
+  subtitle: 'Senior Software Engineer',
   tagline:
-    'I specialize in building complex React-based web applications, with a background in data visualization and GIS.',
+    'I am a frontend-focused full-stack engineer. I specialize in building data-intensive web applications, with a background in data visualization and GIS.',
   title: 'Caitlin Wolters',
 }
