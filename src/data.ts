@@ -29,7 +29,7 @@ export const RESUME: Resume = {
     {
       children: [
         {
-          body: ['Javascript, React, Typescript, Webpack, Redux, Angular'],
+          body: ['Javascript, React, Typescript, Webpack, Tanstack Query'],
           title: 'Frontend',
         },
         {
@@ -45,11 +45,11 @@ export const RESUME: Resume = {
           title: 'Data Visualization + Maps',
         },
         {
-          body: ['Node, Postgres, Express'],
+          body: ['Node, Postgres, Express, Redis'],
           title: 'Backend',
         },
         {
-          body: ['Gitlab Pipelines, Auth0, Docker'],
+          body: ['Gitlab CI/CD, Auth0, Docker, Kubernetes, Google Cloud Platform'],
           title: 'Devops',
         },
       ],
@@ -58,9 +58,19 @@ export const RESUME: Resume = {
     {
       children: [
         {
-          body: [`February 2024 - Present, ${geospanLength}`],
+          body: [
+            `February 2024 - Present, ${geospanLength}`,
+            'Currently a Senior Software Engineer and team lead, working primarily on the frontend product but also contributing to QA and devops efforts.',
+          ],
           subtitles: ['Senior Software Engineer'],
           title: 'GeoSpan',
+        },
+        {
+          body: [
+            `November 2014 - present, ${contractingLength}`,
+            'I occasionally take contract and freelance roles doing web development. I currently work with a nonprofit organization to develop full-stack applications, typically with a geospatial component. ',
+          ],
+          title: 'Contracting - Full Stack',
         },
         {
           body: [
@@ -85,13 +95,6 @@ export const RESUME: Resume = {
           ],
           subtitles: ['Front End Web Developer, Web Applications Developer'],
           title: 'Yale',
-        },
-        {
-          body: [
-            `November 2014 - present, ${contractingLength}`,
-            'I occasionally take contract and freelance roles doing web development. I work primarily with nonprofit organizations to develop frontend applications, specializing in web mapping and data visualization tools.',
-          ],
-          title: 'Contracting',
         },
         {
           body: [
@@ -145,6 +148,6 @@ export const RESUME: Resume = {
   ],
   subtitle: 'Senior Software Engineer',
   tagline:
-    'I am a frontend-focused full-stack engineer. I specialize in building data-intensive web applications, with a background in data visualization and GIS.',
+    'I am a senior full-stack engineer. I specialize in building data-intensive web applications, with a background in data visualization and GIS.',
   title: 'Caitlin Wolters',
 }
