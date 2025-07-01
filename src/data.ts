@@ -139,7 +139,7 @@ export const RESUME: Resume = {
           title: 'Private Pilot License',
         },
         {
-          body: ['7th place female finisher'],
+          body: ['4th place female finisher'],
           title: '50k Ultramarathon',
         },
       ],
